@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,3 +7,65 @@ body {
     gap: 20px;
     margin-top: 50px;
 }
+
+.button{
+    transition-property: all;
+    transition-duration: 350ms;
+    background-color: #3498db;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+}
+.button:hover{
+    transition-property: all;
+    transition-duration: 150ms;
+    background-color: #2980b9;
+}
+.button:active{
+    background-color: #1c5985;
+}
+
+.text_input{
+    transition-property: all;
+    transition-duration: 350ms;
+    background-color: none;
+    border: solid 2px #ccc;
+    padding: 5px 20px 5px 5px;
+    outline: none;
+}
+.text_input:focus{
+    border: solid 2px #3498db;
+}
+.text_input:disabled{
+    color: #aaa;
+    background-color: #ddd;
+}
+
+.link{
+    transition-property: all;
+    transition-duration: 350ms;
+    text-decoration: none;
+    color:#3498db;
+}
+.link:visited{
+    color:green;
+}
+li{
+    background-color: purple;
+}
+
+li:nth-child(2n){
+    background-color: blue;
+}
+#check + label{
+    transition-property: color, margin-right ;
+    transition-duration: 350ms;
+    color:black;
+}
+#check:checked + label{
+    color: green;
+    filter: drop-shadow(1px 1px 0px);
+}
+
+.cock{color:#3498db, #2980b9, #1c5985, #ccc, #f0f0f0, #aaa}
